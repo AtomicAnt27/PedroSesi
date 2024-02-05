@@ -1,5 +1,3 @@
-alert("A Ester é a rainha da beleza")
-
 function soma() {
     var num1 = document.getElementById("n1soma").valueAsNumber;
     var num2 = document.getElementById("n2soma").valueAsNumber;

@@ -1,6 +1,7 @@
 body{
    padding: 20px;
    overflow-x: hidden;
+   background-color: #f5f0f0;
 }
 .principal{
     width:97% ;
@@ -9,21 +10,83 @@ body{
     text-align: center;
 }
 
-.font-style{
+.font-style {
     border-bottom: 2px solid;
     font-size: 3rem;
-    font-family: 'Single Day', cursive;
+    font-family: "Titan One", cursive;
     padding-bottom: 15px;
 }
 .font-style02{
     font-size: 1.8rem;
+    font-family: "Quicksand", sans-serif;
 }
 
+h2 {
+    font-family: "Prompt", sans-serif;
+}
+
+#ditto {
+    width: 8rem;
+}
+
+label {
+    font-family: "Open Sans";
+}
+
+.resultado {
+    font-family: "Open Sans";
+    text-align: center;
+}
 .div-calculos{
-    background-color: lightgray;
-    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.div-calculos > div {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    width: 13rem;
+    background-color: #ece7e7;
+    transition: all 100ms ease-in-out;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+.div-calculos > div:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 0.2rem;
+}
+
+.div-calculos > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    padding: .5rem;
+    margin: .25rem;
+    border-radius: 0.5rem;
+    background-color: #ccc;
+    border: none;
+}
+
+button {
+    padding: 0.8rem;
+    margin: .25rem;
+    margin-top: 10px;
+    width: 8rem;
+    border-radius: .5rem;
+    background-color: #ccc;
+    border: none;
+    font-family: "Open Sans";
+
+    transition: all 100ms ease-in-out;
+}
+button:hover {
+    background-color: rgb(48, 48, 90);
+    color:white;
 }
