@@ -1,0 +1,29 @@
+body{
+   padding: 20px;
+   overflow-x: hidden;
+}
+.principal{
+    width:97% ;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.font-style{
+    border-bottom: 2px solid;
+    font-size: 3rem;
+    font-family: 'Single Day', cursive;
+    padding-bottom: 15px;
+}
+.font-style02{
+    font-size: 1.8rem;
+}
+
+.div-calculos{
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
