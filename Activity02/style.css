@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    background-color: lightgray;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    margin-left: 25px;
+}
