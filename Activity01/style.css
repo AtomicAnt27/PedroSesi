@@ -47,7 +47,8 @@ label {
 .div-calculos > div {
     margin: 0.5rem;
     border-radius: 1rem;
-    width: 13rem;
+    width: 15rem;
+    height: 26rem;
     background-color: #ece7e7;
     transition: all 100ms ease-in-out;
 
