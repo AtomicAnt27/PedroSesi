@@ -32,11 +32,11 @@
         </div>
       </div>
       <h1>Pedro da Fonseca Schwertner</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asflkfslkgfdklgfdkljgfdjkfgdkjngkjngfdjkngfdjkngfdjkn?</p>
+      <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
     </section>
     <section class="ester" id="ester">
       <h1>Ester Rafaela Boldt</h1>
-      <p>A Ester é um ET</p>
+      <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
       <div>
         <div class="rel">
           <img class="img02" src="https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/ooD7SIXQGdYuUESygIe5HcAAdLeNAKCTepYrSt~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735386773&x-signature=n%2FIn728ESaaOIS5KHSx%2F18Ev0Ns%3D">
@@ -76,24 +76,41 @@
       </div>
       <div class="leftContact">
         <div>
-        <p>Mandar mensagem</p>
+        <p>Mandar mensagem Ester</p>
         </div>
-        <div>
+        <div class="msg">
           <label for="nome">Nome:</label>
-          <input type="text" id="nome">
+          <input type="text" id="nome" class="nome">
         </div>
-        <div>
+        <div class="msg">
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem"></textarea>
+          <textarea id="mensagem" class="mensagem"></textarea>
         </div>
-        <button onclick="conferirMensagemWhatsapp()">Enviar</button>
-      </div>
-      <div class="rightContact">
-        <div>
+        <button onclick="conferirZapEster()" class="msg_button">Enviar</button>
+        <div class="msg">
           <p>Nome: <span id="confNome"></span></p>
           <p>Mensagem: <span id="confMsg"></span></p>
         </div>
-        <button onclick="enviarZap()">Zap</button>
+        <button onclick="enviarEster()" class="msg_button">Zap</button>
+      </div>
+      <div class="rightContact">
+        <div>
+          <p>Mandar mensagem Fonseca</p>
+          </div>
+          <div class="msg">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="nome">
+          </div>
+          <div class="msg">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" class="mensagem"></textarea>
+          </div>
+          <button onclick="ConferirZapFonseca()" class="msg_button">Enviar</button>
+        <div class="msg">
+          <p>Nome: <span id="confNome"></span></p>
+          <p>Mensagem: <span id="confMsg"></span></p>
+        </div>
+        <button onclick="enviarFonseca()" class="msg_button">Zap</button>
       </div>
     </section>
     <section class="copyright_ditto">

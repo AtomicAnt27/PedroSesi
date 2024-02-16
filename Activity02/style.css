@@ -19,7 +19,7 @@ section {
 header{
   width: 100vw;
   height: fit-content;
-  background-color: #fff;
+  background-color: white;
   position: fixed;
   transition: box-shadow 100ms ease-in-out;
   z-index: 999;
@@ -156,6 +156,22 @@ margin: 1rem;
   max-height: 5rem;
 }
 
+.msg{
+  font-family: 'Quicksand', sans-serif;
+  margin: 1rem;
+}
+
+.msg_button{
+  margin: 0.5rem;
+  width: 5rem;
+  border-radius: 3px;
+}
+
+.mensagem{
+  width: 20rem;
+  height: 10rem;
+  border-radius: 3px;
+}
 
 .copyright_ditto{
   padding: 2rem;

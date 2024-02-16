@@ -10,7 +10,7 @@ window.onscroll = async () => {
 var nomeGlobal;
 var mensagemGlobal;
 
-function conferirMensagemWhatsapp(){
+function conferirZapEster(){
     var nome = document.getElementById("nome").value;
     var mensagem = document.getElementById("mensagem").value;
 
@@ -21,10 +21,27 @@ function conferirMensagemWhatsapp(){
     document.getElementById("confMsg").textContent = mensagem;
 }
 
-function enviarZap(){
+function enviarEster(){
     var numTelEster = "5"
-    var numTelFonseca = "5"
 
     var linkWhatsApp = "https://wa.me/" + numTelEster + "?text=Nome:" + nomeGlobal + "-" + mensagemGlobal;
+    window.open(linkWhatsApp, "_blank");
+}
+
+function ConferirZapFonseca(){
+    var nome = document.getElementById("nome").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    nomeGlobal = nome;
+    mensagemGlobal = mensagem;
+    
+    document.getElementById("confNome").textContent = nome;
+    document.getElementById("confMsg").textContent = mensagem;
+}
+
+function enviarFonseca(){
+    var numTelFonseca = "5"
+
+    var linkWhatsApp = "https://wa.me/" + numTelFonseca + "?text=Nome:" + nomeGlobal + "-" + mensagemGlobal;
     window.open(linkWhatsApp, "_blank");
 }
