@@ -112,7 +112,7 @@ li{
   padding-top: 2.5rem;
   padding-left: 2rem;
   width: 100%;
-  height: 600px;
+  height: 40remrem;
   background-color: #fff;
 }
 
@@ -124,10 +124,10 @@ li{
 
 .tecno_content > div{
   width: 25rem;
-  height: 50rem;
+  height: 41rem;
   text-align: justify;
   text-justify: inter-word;
-  padding: 1REM;
+  padding: 1rem;
   margin: 2rem;
   display: flex;
   flex-direction: column;
