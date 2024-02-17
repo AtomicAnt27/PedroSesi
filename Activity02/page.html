@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 2</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/ditto_icon.png">
+
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
-    <!--https://codepen.io/marcobiedermann/pen/aZZQww/-->
 </head>
 <body>
     <header class="header">
       <ul>
-        <li><a href="#fonseca"><span class="material-symbols-outlined">home</span></a></li>
-        <li><a href="#ester"><span class="material-symbols-outlined">group</span></a></li>
+        <li><a href="#homepage"><span class="material-symbols-outlined">home</span></a></li>
+        <li><a href="#perfis"><span class="material-symbols-outlined">group</span></a></li>
         <li><a href="#tecno"><span class="material-symbols-outlined">code</span></a></li>
         <li><a href="#contact"><span class="material-symbols-outlined">call</span></a></li>
       </ul> 
     </header>
-    <section class="fonseca" id="fonseca">
-      <div>
+
+    <!--  Home  -->
+    <section class="homepage" id="homepage">
+      <div class="homepage_title">
+        <h1>Conheça a nossa empresa</h1>
+      </div>
+    </section>
+
+    <section class="perfis" id="perfis">
+      <!--  Perfil Fonseca  -->
+      <section class="fonseca" id="fonseca">
         <div class="rel">
           <img class="img01" src="https://i.redd.it/kcgjya022en61.png">
         </div>
-      </div>
-      <h1>Pedro da Fonseca Schwertner</h1>
-      <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
-    </section>
-    <section class="ester" id="ester">
-      <h1>Ester Rafaela Boldt</h1>
-      <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
-      <div>
+        <div>
+          <h1>Pedro da Fonseca Schwertner</h1>
+          <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
+        </div>
+      </section>
+
+      <!--  Perfil Ester  -->
+      <section class="ester" id="ester">
         <div class="rel">
           <img class="img02" src="https://p16-capcut-sign-va.ibyteimg.com/tos-maliva-v-be9c48-us/ooD7SIXQGdYuUESygIe5HcAAdLeNAKCTepYrSt~tplv-nhvfeczskr-1:250:0.webp?lk3s=44acef4b&x-expires=1735386773&x-signature=n%2FIn728ESaaOIS5KHSx%2F18Ev0Ns%3D">
         </div>
-      </div>
+        <div>
+          <h1>Ester Rafaela Boldt</h1>
+          <p>Estudante de 16 anos em técnico em desenvolvimento de sistemas no Sesi Senai</p>
+        </div>
+      </section>
     </section>
+
+    <!--  Tecnologias  -->
     <section class="tecno" id="tecno">
       <div>
         <h1>Tecnologias</h1>
@@ -70,6 +86,8 @@
         </div>
       </div>
     </section>
+
+    <!--  Contato  -->
     <section class="contactDiv" id="contact">
       <div>
         <h2>Contato</h2>
@@ -113,9 +131,16 @@
         <button onclick="enviarFonseca()" class="msg_button">Zap</button>
       </div>
     </section>
-    <section class="copyright_ditto">
-      <div class="ditto_rgb"><img src="https://pa1.aminoapps.com/6298/fe700708cf3e2a7daa55926ad95e7b37100a3a48_hq.gif" height="100" width="100"></div>
-      <p class="pipipopopo">PIPIPOPOPO</p>
-    </section> 
+
+    <!--  Copyright  -->
+    <footer>
+      <img src="img/ditto_gif.gif" height="100" width="100">
+      <div class="footer">
+        <span id="footer_copyright"></span>
+        <script>
+          document.querySelector("#footer_copyright").innerHTML = "Copyright &copy; %YEAR% Pedro da Fonseca Schwertner. Todos os direitos reservados.".replace('%YEAR%', new Date().getFullYear())
+        </script>
+      </div>
+      </footer>
 </body>
 </html>
