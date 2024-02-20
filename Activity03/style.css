@@ -5,4 +5,21 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background-image: url("Images/background_mobile.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    transition: all ls linear;
+    overflow: hidden;
+}
+
+.wrap-everything{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100%;
+    width: 100%;
 }
