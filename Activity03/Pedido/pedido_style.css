@@ -13,7 +13,13 @@ body {
 }
 
 #selects-div{
-    display: none;
+   display: none;
+   flex-direction: column;
+   gap: 2vh;
+}
+
+.badge{
+    font-size: 1.4rem !important;
 }
 
 .error-modal{
