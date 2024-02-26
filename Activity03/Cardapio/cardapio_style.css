@@ -54,6 +54,16 @@ h2{
     cursor: pointer;
 }
 
+.card-img-top{
+    width: auto;
+    height: 15rem;
+}
+
+.card{
+    width: 19rem;
+    height: 28.5rem;
+}
+
 @media (width>= 1024px){
     .body{
         overflow-x: hidden;
