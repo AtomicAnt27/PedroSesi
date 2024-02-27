@@ -16,131 +16,126 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="../Menu/menu_page.html" class="arrow_back"><span class="material-symbols-outlined">arrow_back</span></a>
-
-    <h1>Cardápio</h1>
-    
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input onclick="muda_cardapio(0)" type="radio" class="btn-check" name="cardapio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio1">Pratos</label>
-      
-        <input onclick="muda_cardapio(1)" type="radio" class="btn-check" name="cardapio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio2">Bebidas</label>
-      
-        <input onclick="muda_cardapio(2)" type="radio" class="btn-check" name="cardapio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Sobremesas</label>
-    </div>
-
-    <div class="content">
-        <div class="cardapio">
-
-            <h2>Pratos</h2>
-            <div class="wrap-cards">
-                <div class="card">
-                    <img src="../Images/Pom_Porridge.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mingau de Romã</h5>
-                        <p class="card-text">Um delicioso mingau de romã com outras maravilhas do submundo. Vindas direto do jardim de Perséfone!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Charon_Gyro.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Gyro do Caronte</h5>
-                        <p class="card-text">Um clássico do submundo. Com molho secreto e batatas fritas feitas especialmente nos Elísios.</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/dead_man's_skewer.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Espetinho de Defunto</h5>
-                        <p class="card-text">Nada de defuntos! Esse espetinho de carne de Esturjão é uma das maravilhas da superfície!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Exclusive_Cyclope_Meat.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Carne de Ciclope Exclusiva</h5>
-                        <p class="card-text">Assado de Truta e Cebola Roxa, uma iguaria das margens do rio Estige!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-            </div>
+    <header class="header">
+        <ul>
+            <li><a href="../Menu/menu_page.html"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="../Cardapio/cardapio_page.html">Cardapio</a></li>
+            <li><a href="../Pedido/pedido_page.html">Pedido</a></li>
+        </ul>
+        <div class="logo_wrap" style="text-align: center;">
+            <img class="logo_img" src="../Images/Logo.png" alt="logo">
         </div>
-        
-        <div class="cardapio">
+    </header>
 
-            <h2>Bebidas</h2>
-            <div class="wrap-cards">
-                <div class="card">
-                    <img src="../Images/Refreshing_Nectar.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Néctar Refrescante</h5>
-                        <p class="card-text">Uma doce mistura de Néctar e Ambrosia líquida nesse refrescante drink infernal!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
+    <div class="wrap-everything">
+        <div class="content">
+            <h1 class="cardapio_title">Cardápio</h1>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input onclick="muda_cardapio(0)" type="radio" class="btn-check" name="cardapio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-dark" for="btnradio1">Pratos</label>
+            
+                <input onclick="muda_cardapio(1)" type="radio" class="btn-check" name="cardapio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio2">Bebidas</label>
+            
+                <input onclick="muda_cardapio(2)" type="radio" class="btn-check" name="cardapio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio3">Sobremesas</label>
+            </div>
+
+            <div class="cardapio">
+                <h2>Pratos</h2>
+                <div class="wrap-cards">
+                    <div class="card">
+                        <img src="../Images/Pom_Porridge.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mingau de Romã</h5>
+                            <p class="card-text">Um delicioso mingau de romã com outras maravilhas do submundo. Vindas direto do jardim de Perséfone!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Gold_Hydralite.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Hidralyte Ouro</h5>
-                        <p class="card-text">Uma bebida especial cuja receita vive apenas na memória dos guerreiros caídos dos Elísios.</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
+                    <div class="card">
+                        <img src="../Images/Charon_Gyro.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gyro do Caronte</h5>
+                            <p class="card-text">Um clássico do submundo. Com molho secreto e batatas fritas feitas especialmente nos Elísios.</p>
+                        </div>
+                   </div>
+                    <div class="card">
+                        <img src="../Images/dead_man's_skewer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Espetinho de Defunto</h5>
+                            <p class="card-text">Nada de defuntos! Esse espetinho de carne de Esturjão é uma das maravilhas da superfície!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Nike's_Juice.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Suco da Vitória</h5>
-                        <p class="card-text">Uma dose de néctar e a benção de Nike! Perfeito para tomar antes da batalha.</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Overflowing_Cup.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dádiva de Dionísio</h5>
-                        <p class="card-text">Vinho feito das uvas abençoadas do jardim de Perséfone. Um sabor adocicado e inesquecível!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
+                    <div class="card">
+                        <img src="../Images/Exclusive_Cyclope_Meat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Carne de Ciclope Exclusiva</h5>
+                            <p class="card-text">Assado de Truta e Cebola Roxa, uma iguaria das margens do rio Estige!</p>
+                        </div>
                     </div>
                 </div>
             </div>
+                
+            <div class="cardapio">
+                <h2>Bebidas</h2>
+                <div class="wrap-cards">
+                    <div class="card">
+                        <img src="../Images/Refreshing_Nectar.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Néctar Refrescante</h5>
+                            <p class="card-text">Uma doce mistura de Néctar e Ambrosia líquida nesse refrescante drink infernal!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/Gold_Hydralite.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hidralyte Ouro</h5>
+                            <p class="card-text">Uma bebida especial cuja receita vive apenas na memória dos guerreiros caídos dos Elísios.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/Nike's_Juice.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco da Vitória</h5>
+                            <p class="card-text">Uma dose de néctar e a benção de Nike! Perfeito para tomar antes da batalha.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/Overflowing_Cup.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dádiva de Dionísio</h5>
+                            <p class="card-text">Vinho feito das uvas abençoadas do jardim de Perséfone. Um sabor adocicado e inesquecível!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cardapio">
+                <h2>Sobremesas</h2>
+                <div class="wrap-cards">
+                    <div class="card">
+                        <img src="../Images/Ambrosia_Delight1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Deleite de Ambrosia</h5>
+                            <p class="card-text">Especial de Eurídice! A mistura de frutas e Ambrosia torna esse prato algo digno do Olimpo.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/skull_gum_candy.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Caveira Doce</h5>
+                            <p class="card-text">Balas de açucar que derretem na boca como as águas do rio Flegetonte. Sinta o calor do reino de Hades!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/Bloodstone.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pedra de Sangue</h5>
+                            <p class="card-text">Esse doce com cobertura de romãs e framboesas é um dos favoritos na Casa de Hades!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         </div>
-    
-        <div class="cardapio">
-
-            <h2>Sobremesas</h2>
-            <div class="wrap-cards">
-                <div class="card">
-                    <img src="../Images/Ambrosia_Delight1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Deleite de Ambrosia</h5>
-                        <p class="card-text">Especial de Eurídice! A mistura de frutas e Ambrosia torna esse prato algo digno do Olimpo.</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/skull_gum_candy.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Caveira Doce</h5>
-                        <p class="card-text">Balas de açucar que derretem na boca como as águas do rio Flegetonte. Sinta o calor do reino de Hades!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../Images/Bloodstone.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pedra de Sangue</h5>
-                        <p class="card-text">Esse doce com cobertura de romãs e framboesas é um dos favoritos na Casa de Hades!</p>
-                        <a href="#" class="btn btn-primary">+ Adicionar ao pedido</a>
-                    </div>
-                </div>
-            </div>
-        </div>        
-        
     </div>
 </body>
 </html>
