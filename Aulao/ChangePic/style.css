@@ -1,7 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.light{
+    background: rgb(223, 156, 214);
+}
+
+html{
+    background: rgb(160, 102, 146);
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    padding: 20px;
+}
+
+.wrap-image{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#profile:hover{
+    transform: scale(1.1);
+    transition: all 200ms linear;
+}
+
+button{
+    background: none;
+    border: 2px solid lightseagreen;
+    color:lightseagreen;
+    padding: 10px;
+    border-radius: 999px;
+    opacity: 0.8;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    opacity: 1;
+}
+
+p{
+    color: #ffff;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
 }
